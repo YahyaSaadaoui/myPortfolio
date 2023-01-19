@@ -12,7 +12,8 @@
     --first-color: #49111C;
     --white-color: #D7D7D7;
     --dark-color: #0a0908;
-    --text-color: #D7D7D7;
+    --text-color: #38023b;
+    --text-footer:#D7D7D7;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -366,6 +367,7 @@ img{
 }
 .footer__link{
     padding: .25rem 0;
+    color : var(--text-footer)
 }
 .footer__link:hover{
     color: var(--first-color);

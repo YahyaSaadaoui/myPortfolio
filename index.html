@@ -1,196 +1,219 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My protfolio</title>
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="styles.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My protfolio</title>
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="styles.css">
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <link  rel="shortcut icon" type="image/png" href="logo.jpg">
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link  rel="shortcut icon" type="image/png" href="assets/logo.jpg">
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Yahya SAADAOUI</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                </div>
+
+                <img src="" alt="" class="home__img">
+            </div>
+        </section>
+        
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+
+
                 <div>
-                    <a href="#" class="nav__logo">Yahya SAADAOUI</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    <h2 class="about__subtitle">I'am Yahya SAADAOUI</h2>
+                    <span class="about__profession">Web developer<br>I'm a computer and networking engineering student I'm brilliant at my career and I want to share 
+                        my services and knowlege </span>
+                    <div class="about__social">
+                        <a href="#" class="about__social-icon" title="yahyasaadaoui2019@gmail.com"><i class='bx bxl-google' ></i></a>
+                        <a href="https://web.facebook.com/yahya.saadaoui.509/" class="about__social-icon"><i class='bx bxl-facebook' ></i></a>
+                        <a href="https://www.instagram.com/dr_slow72/" class="about__social-icon"><i class='bx bxl-instagram' ></i></a>
+                        <a href="https://www.instagram.com/dr_slow72/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://www.instagram.com/dr_slow72/" class="about__social-icon"><i class='bx bxl-github' ></i></a>
                     </div>
-
-                    <img src="" alt="" class="home__img">
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-
-
-                    <div>
-                        <h2 class="about__subtitle">I'am Yahya SAADAOUI</h2>
-                        <span class="about__profession">Web developer<br>I'm a computer and networking engineering student I'm brilliant at my career and I want to share 
-                            my services and knowlege </span>
-                        <div class="about__social">
-                            <a href="https://web.facebook.com/yahya.saadaoui.509/" class="about__social-icon"><i class='bx bxl-facebook' ></i></a>
-                            <a href="https://www.instagram.com/dr_slow72/" class="about__social-icon"><i class='bx bxl-instagram' ></i></a>
-                            <a href="https://github.com/YahyaSaadaoui" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="https://www.linkedin.com/in/yahya-saadaoui-76546322a/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Development</h3>
-                        <span class="skills__name">Html</span>
-                        <span class="skills__name">Css</span>
-                        <span class="skills__name">Bootstrap</span>
-                        <span class="skills__name">Javascript</span>
-                        <span class="skills__name">PHP</span>
-                        <span class="skills__name">Symfony</span>
-                        <span class="skills__name">Laravel</span>
-                        <span class="skills__name">React js</span>
-                        <span class="skills__name">Vue js 3</span>
-                        <span class="skills__name">Python</span>
-                        <span class="skills__name">Ado.net</span>
-                        <span class="skills__name">C#</span>
-                        <span class="skills__name">database</span>
-                        <span class="skills__name">desktop applications</span>
-                        <span class="skills__name">web sites creation and design</span>
-                        <span class="skills__name">WordPress themes</span>
-                        <span class="skills__name">e commerce</span>
-                        <span class="skills__name">store creation </span>                        
-                        <span class="skills__name">logo design</span>
-                        <span class="skills__name">Mobile App Developement</span>
-                        <span class="skills__name">Back End</span>
-                        <span class="skills__name">Front End</span>
-                        <span class="skills__name">SQL/Transact SQL</span>
-                        <span class="skills__name">Pl/Sql</span>
-                        <span class="skills__name">SEO AUDIT</span>
-                        <h3 class="skills__subtitle">Graphic Design</h3>
-                        <span class="skills__name">Photoshop</span>
-                        <span class="skills__name">Illustrator</span>
-                        <span class="skills__name">Adobe premier</span>
-                        <span class="skills__name">Adobe InDesign</span>
-                        <span class="skills__name">Figma</span>
-                    </div>
-                    <div class="skills__img">
-                        <img src="assets/img/skill.jpg" alt="">
-                    </div>
-                </div>
-            </section>
-
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
-
-                <div class="portfolio__container bd-grid">
-                    <div onclick="location.href='https://abdelkbireshop.com/'" target="_self" class="portfolio__img">
-                        <img src="abdelkbire.png"  alt=""><h3>Web Site</h3> 
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name"> </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">yahyasaadaoui2019@gmail.com</span>
-
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+212 648280812</span>
-
-                        <h3 class="contact__subtitle">ADRESS</h3>
-                        <span class="contact__text">Morroco</span>
-                    </div>
-
-                    <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
-                        </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-
-                        <input type="submit" value="Send" class="contact__button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">Yahya SAADAOUI</h2>
-                </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="https://web.facebook.com/hafsa.elomrani.9/" class="footer__social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://www.instagram.com/dr_slow72/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://github.com/YahyaSaadaoui" class="footer__social"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/yahya-saadaoui-76546322a/" class="footer__social"><i class='bx bxl-linkedin' ></i></a>
                 </div>
             </div>
-        </footer>
+        </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
 
-        <!--===== MAIN JS =====-->
-        <script src="main.js"></script>
-    </body>
+            <div class="skills__container bd-grid">
+                <div class="skills__box">
+                    <h3 class="skills__subtitle">Development</h3>
+                    <span class="skills__name">Html</span>
+                    <span class="skills__name">Css</span>
+                    <span class="skills__name">Bootstrap</span>
+                    <span class="skills__name">Javascript</span>
+                    <span class="skills__name">PHP</span>
+                    <span class="skills__name">Symfony</span>
+                    <span class="skills__name">Laravel</span>
+                    <span class="skills__name">React js</span>
+                    <span class="skills__name">Vue js 3</span>
+                    <span class="skills__name">Python</span>
+                    <span class="skills__name">Ado.net</span>
+                    <span class="skills__name">C#</span>
+                    <span class="skills__name">database</span>
+                    <span class="skills__name">desktop applications</span>
+                    <span class="skills__name">web sites creation and design</span>
+                    <span class="skills__name">WordPress themes</span>
+                    <span class="skills__name">e commerce</span>
+                    <span class="skills__name">store creation </span>
+                    <span class="skills__name">logo design</span>
+                    <span class="skills__name">Mobile App Developement</span>
+                    <span class="skills__name">Back End</span>
+                    <span class="skills__name">Front End</span>
+                    <span class="skills__name">SQL/Transact SQL</span>
+                    <span class="skills__name">Pl/Sql</span>
+                    <span class="skills__name">SEO AUDIT</span>
+                    <h3 class="skills__subtitle">Graphic Design</h3>
+                    <span class="skills__name">Photoshop</span>
+                    <span class="skills__name">Illustrator</span>
+                    <span class="skills__name">Adobe premier</span>
+                    <span class="skills__name">Adobe InDesign</span>
+                    <span class="skills__name">Figma</span>
+                </div>
+                <div class="skills__img">
+                    <img src="assets/img/skill.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+
+        <div class="portfolio__container bd-grid">
+            <div onclick="location.href='https://cityweather.netlify.app'" target="_self" class="portfolio__img">
+                <img src="assets\weather_forecastapp.JPG" alt="WeatherForecastapp">
+                <h3>Weather Forecast app</h3>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name"> </a>
+                </div>
+            </div>
+            <div onclick="location.href='https://projectx.netlify.app'" target="_self" class="portfolio__img">
+                <img src="assets/projectx.JPG" alt="games web site">
+                <h3>games web site</h3>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name"> </a>
+                </div>
+            </div>
+            <div onclick="location.href='https://e-commerce-te.netlify.app'" target="_self" class="portfolio__img">
+                <img src="assets/ecom.png" alt="e-commerce-app">
+                <h3>e-commerce-app</h3>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name"> </a>
+                </div>
+            </div>
+            <div onclick="location.href='https://storeofnike.netlify.app'" target="_self" class="portfolio__img">
+                <img src="assets/NIkeStore.png" alt="Nike Store">
+                <h3>Nike Store</h3>
+                <div class="portfolio__link">
+                    <a href="#" class="portfolio__link-name"> </a>
+                </div>
+            </div>
+        </div>
+</section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">EMAIL</h3>
+                    <span class="contact__text">yahyasaadaoui2019@gmail.com</span>
+
+                    <h3 class="contact__subtitle">PHONE</h3>
+                    <span class="contact__text">+212 648280812</span>
+
+                    <h3 class="contact__subtitle">ADRESS</h3>
+                    <span class="contact__text">Morroco</span>
+                </div>
+
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                    </div>
+
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                    <input type="submit" value="Send" class="contact__button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+        <div class="footer__container bd-grid">
+            <div class="footer__data">
+                <h2 class="footer__title">Yahya SAADAOUI</h2>
+                <p class="footer__text">I'm Yahya SAADAOUI and this is my personal website</p>
+            </div>
+
+            <div class="footer__data">
+                <h2 class="footer__title">EXPLORE</h2>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#about" class="footer__link">About</a></li>
+                    <li><a href="#skills" class="footer__link">Skills</a></li>
+                    <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                    <li><a href="#Contact" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__data">
+                <h2 class="footer__title">FOLLOW</h2>
+                <a href="#"  title="yahyasaadaoui2019@gmail.com" class="footer__social"><i class='bx bxl-google' ></i></a>
+                <a href="https://web.facebook.com/hafsa.elomrani.9/" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/dr_slow72/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="main.js"></script>
+</body>
 </html>

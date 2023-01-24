@@ -14,6 +14,7 @@
     --dark-color: #0a0908;
     --text-color: #000000;
     --text-footer: #D7D7D7;
+    --section-title:#990000;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -101,7 +102,7 @@ img {
 .section-title {
     position: relative;
     font-size: var(--h2-font-size);
-    color: var(--dark-color);
+    color: var(--section-title);
     margin: var(--mb-4) 0;
     text-align: center;
 }
@@ -405,6 +406,7 @@ img {
 footer {
     color: var(--text-footer);
 }
+
 .footer {
     background-color: var(--dark-color);
     color: var(--text-footer);

@@ -215,7 +215,7 @@ img {
 .home__title {
     align-self: flex-end;
     font-size: var(--big-font-size);
-    color: var(--section-title);
+    color: var(--white-color);
     line-height: .8;
 }
 

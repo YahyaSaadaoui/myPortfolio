@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://yahyasaadaoui.me",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -43,7 +44,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://yahyasaadaoui.me",
   "devDependencies": {
     "gh-pages": "^6.0.0"
   }

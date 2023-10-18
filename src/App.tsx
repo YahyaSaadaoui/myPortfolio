@@ -118,7 +118,7 @@ function App(props: Props): JSX.Element  {
                   <BsLinkedin />
                 </a>
                 <a
-                  href="assets/yahya saadaoui.pdf"
+                  href="assets/yahya-saadaoui.pdf"
                   download
                   className="about__social-icon">
                   <GiGraduateCap />
@@ -379,7 +379,7 @@ function App(props: Props): JSX.Element  {
               <BsLinkedin />
             </a>
             <a
-              href="assets/yahya saadaoui.pdf"
+              href="assets/yahya-saadaoui.pdf"
               download
               className="footer__social">
               <GiGraduateCap />

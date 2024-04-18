@@ -9,12 +9,14 @@
 
 /*===== Colores =====*/
 :root {
-    --first-color: #474747;
-    --white-color: #D7D7D7;
-    --dark-color: #0a0908;
-    --text-color: #000000;
-    --text-footer: #D7D7D7;
-    --section-title:#990000;
+    --first-color: #000212;      /* Main color */
+    --white-color: #D7D7D7;      /* Light background color */
+    --dark-color: #0a0908;       /* Dark background color */
+    --text-color: #FFFFFF;       /* Text color for dark backgrounds */
+    --text-footer: #D7D7D7;      /* Text color for footer */
+    --section-title: #990000;    /* Section title color */
+    --accent-color: #FFC107;     /* Accent color for highlights and buttons */
+    --link-color: #007BFF;       /* Link color */
 }
 
 /*===== Fuente y tipografia =====*/
@@ -249,18 +251,18 @@ img {
 }
 
 .about__img {
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    width: 120px;
-    height: 120px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 320px;
+  overflow: hidden;
+
 }
 
 .about__img img {
-    width: 100px;
+    width: 300px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px #082249; /* Neon shadow effect */
 }
 
 .about__subtitle {
@@ -276,6 +278,7 @@ img {
 .about__profession {
     display: block;
     margin-bottom: var(--mb-4);
+    color: var(--first-color);;
 }
 
 .about__social-icon {
@@ -289,7 +292,10 @@ img {
 
 /* ===== SKILLS =====*/
 .skills__container {
-    row-gap: 2rem;
+  display: flex;
+    justify-content: center;
+  align-self: center;
+
 }
 
 .skills__subtitle {
@@ -316,6 +322,25 @@ img {
     border-radius: .5rem;
 }
 
+.skills__box{
+  display: flex;
+    justify-content: center;
+  align-self: center;
+  
+}
+
+.FrameWorks,
+.backfront,
+.database,
+.Tools,
+.IDE,
+.Designing,
+.OperatingSys,
+.Other {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* ===== PORTFOLIO =====*/
 .portfolio {
     background-color: var(--white-color);
@@ -329,10 +354,19 @@ img {
 .portfolio__img {
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+}
+.portfolio__img:hover {
+    transform: scale(1.1); /* Scale image to 110% on hover */
 }
 
 .portfolio__img img {
     border-radius: .5rem;
+    width: 300px;
+    height: 160px;
+    background-size: fit;
+    align-items: baseline;
 }
 
 .portfolio__link {
@@ -352,12 +386,65 @@ img {
 
 .portfolio__img:hover .portfolio__link {
     bottom: 0;
+
 }
 
 .portfolio__link-name {
     color: var(--dark-color);
 }
 
+/* Worked With  */
+
+
+.workedWith__container {
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.workedWith__img {
+    position: relative;
+    overflow: hidden;
+}
+
+.workedWith__img img {
+    border-radius: .5rem;
+}
+
+.workedWith__link {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.workedWith__img:hover .workedWith__link {
+    bottom: 0;
+}
+
+.workedWith__link-name {
+    color: var(--dark-color);
+}
+
+.workedWith__container {
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+column-gap: 2rem;
+}
+.tajrayancar{
+  width: 400px;
+  height: 400px;
+}
+.creativecanalmedia{
+  width: 200px;
+  height: 200px;
+}
 /* ===== CONTACT =====*/
 .contact__container {
     row-gap: 2rem;
@@ -515,14 +602,14 @@ footer {
         padding: 4rem 0;
     }
 
-    .about__img {
+    /* .about__img {
         width: 200px;
         height: 200px;
     }
 
     .about__img img {
         width: 165px;
-    }
+    } */
 
     .skills__container {
         grid-template-columns: repeat(2, 1fr);
@@ -534,6 +621,7 @@ footer {
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
     }
+
 
     .contact__container {
         grid-template-columns: repeat(2, 1fr);

@@ -1,0 +1,62 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@media screen and (max-width: 320px) {
+    .home__img {
+        width: 230px;
+    }
+}
+
+/*===== HOME =====*/
+.home {
+    position: relative;
+    background-color: var(--first-color);
+    overflow: hidden;
+}
+
+.home__container {
+    height: calc(100vh - var(--header-height));
+    row-gap: 5rem;
+}
+
+.home__title {
+    align-self: flex-end;
+    font-size: var(--big-font-size);
+    color: var(--white-color);
+    line-height: .8;
+}
+
+.home__title span {
+    text-shadow: 0 20px 25px rgba(0, 0, 0, .5);
+}
+
+.home__scroll {
+    align-self: flex-end;
+    padding-bottom: var(--mb-4);
+}
+
+.home__scroll-link {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    color: var(--white-color);
+}
+
+.home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 295px;
+}
+
+
+    .home__container {
+        height: 100vh;
+        grid-template-rows: 1.7fr 1fr;
+        row-gap: 0;
+    }
+
+    .home__img {
+        width: 524px;
+        right: 10%;
+    }

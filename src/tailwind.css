@@ -1,62 +1,30 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@media screen and (max-width: 320px) {
-    .home__img {
-        width: 230px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Raleway];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
     }
 }
 
-/*===== HOME =====*/
-.home {
-    position: relative;
-    background-color: var(--first-color);
-    overflow: hidden;
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
 }
 
-.home__container {
-    height: calc(100vh - var(--header-height));
-    row-gap: 5rem;
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(112, 157, 255, 0.8),
+        hsla(242, 74%, 61%, 0.8)   
+    )!important;
 }
-
-.home__title {
-    align-self: flex-end;
-    font-size: var(--big-font-size);
-    color: var(--white-color);
-    line-height: .8;
-}
-
-.home__title span {
-    text-shadow: 0 20px 25px rgba(0, 0, 0, .5);
-}
-
-.home__scroll {
-    align-self: flex-end;
-    padding-bottom: var(--mb-4);
-}
-
-.home__scroll-link {
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-    color: var(--white-color);
-}
-
-.home__img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 295px;
-}
-
-
-    .home__container {
-        height: 100vh;
-        grid-template-rows: 1.7fr 1fr;
-        row-gap: 0;
-    }
-
-    .home__img {
-        width: 524px;
-        right: 10%;
-    }

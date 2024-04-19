@@ -495,6 +495,11 @@ const App : React.FC = (props: Props) => {
                 </a>
               </li>
               <li>
+                <a href="#workedWith" className="footer__link">
+                  Contact
+                </a>
+              </li>
+              <li>
                 <a href="#Contact" className="footer__link">
                   Contact
                 </a>

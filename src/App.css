@@ -309,14 +309,11 @@ img {
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
     padding: .25rem .5rem;
-    background-color: var(--white-color);
     border-radius: .25rem;
+    color: rgb(78, 82, 90);
+
 }
 
-.skills__name:hover {
-    background-color: var(--first-color);
-    color: var(--white-color);
-}
 
 .skills__img img {
     border-radius: .5rem;
@@ -369,6 +366,11 @@ img {
     align-items: baseline;
 }
 
+.portfolio__img h3 {
+    font-size:15px;
+    color: var(--dark-color);
+}
+
 .portfolio__link {
     position: absolute;
     bottom: -100%;
@@ -405,6 +407,7 @@ img {
 .workedWith__img {
     position: relative;
     overflow: hidden;
+    color: #000212;
 }
 
 .workedWith__img img {
@@ -433,17 +436,17 @@ img {
 }
 
 .workedWith__container {
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-column-gap: 2rem;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(1, 1fr);
+    /* column-gap: 2rem; */
 }
 .tajrayancar{
-  width: 400px;
-  height: 400px;
+  width: auto;
+  height: auto;
 }
 .creativecanalmedia{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 /* ===== CONTACT =====*/
 .contact__container {
@@ -458,8 +461,11 @@ column-gap: 2rem;
 .contact__text {
     display: inline-block;
     margin-bottom: var(--mb-2);
+    color: var(--first-color);
 }
-
+.contact__info{
+    color: var(--first-color);
+}
 .contact__inputs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

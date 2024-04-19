@@ -1,85 +1,34 @@
-import React from "react";
-import "../App.css";
-import { VscGithub } from "react-icons/vsc";
-import { GrInstagram } from "react-icons/gr";
-import { BsFacebook } from "react-icons/bs";
-import { BsLinkedin } from "react-icons/bs";
-import { GiGraduateCap } from "react-icons/gi";
-import { AiOutlineArrowUp } from "react-icons/ai";
+import React from 'react';
 
+import { HiArrowNarrowRight } from 'react-icons/hi';
 
-type Props = {};
-
-const Home : React.FC = () => { 
-    return (
-      <>
-      <header className="l-header">
-        <nav className="nav bd-grid">
-          <div>
-            <a href="#" className="nav__logo">
-              Yahya SAADAOUI
-            </a>
-          </div>
-
-          <div className="nav__menu" id="nav-menu">
-            <ul className="nav__list">
-              <li className="nav__item">
-                <a href="#home" className="nav__link active">
-                  Home
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#about" className="nav__link">
-                  About
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#skills" className="nav__link">
-                  Skills
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#portfolio" className="nav__link">
-                  Portfolio
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#contact" className="nav__link">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="nav__toggle" id="nav-toggle">
-            <i className="bx bx-menu"></i>
-          </div>
-        </nav>
-      </header>
-
-      <main className="l-main">
-        {/* <!--===== HOME =====--> */}
-        <section className="home" id="home">
-          <div className="home__container bd-grid">
-            <h1 className="home__title">
-              <span>HE</span>
-              <br />
-              LLO.
-            </h1>
-
-            <div className="home__scroll">
-              <a href="#about" className="home__scroll-link">
-                <AiOutlineArrowUp />
-                Scroll down
-              </a>
-            </div>
-
-            <img src="" alt="" className="home__img" />
-          </div>
-        </section>
-              
-            </main>
-            </>
+const Home = () => {
+  return (
+    <div className='w-full h-screen bg-[#0a192f]'>
+      {/* Container */}
+      <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
+        <p className='text-pink-600'>Hi, my name is</p>
+        <h1 className='text-4xl sm:text-7xl font-bold text-[#ccd6f6]'>
+          SAI KUMAR
+        </h1>
+        <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0]'>
+          I'm a Full Stack Developer.
+        </h2>
+        <p className='text-[#8892b0] py-4 max-w-[700px]'>
+          I’m a full-stack developer specializing in building (and occasionally
+          designing) exceptional digital experiences. Currently, I’m focused on
+          building responsive full-stack web applications.
+        </p>
+        <div>
+          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
+            View Work
+            <span className='group-hover:rotate-90 duration-300'>
+              <HiArrowNarrowRight className='ml-3 ' />
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 

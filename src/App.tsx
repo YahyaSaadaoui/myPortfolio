@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef , useState} from 'react';
 import "./App.css";
 import { VscGithub } from "react-icons/vsc";
 import { GrInstagram } from "react-icons/gr";
@@ -7,11 +7,41 @@ import { BsLinkedin } from "react-icons/bs";
 import { GiGraduateCap } from "react-icons/gi";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import Main from "./main";
-import workedWith from "./workedWith"
+import emailjs from '@emailjs/browser';
 
 type Props = {};
 
-const App : React.FC = (props: Props) => { 
+const App: React.FC = (props: Props) => { 
+  const form = useRef<HTMLFormElement | null>(null);
+  const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
+
+const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  if (form.current) {
+    emailjs
+      .sendForm('service_61httok', 'template_t5o5gfq', form.current, {
+        publicKey: 'ymojjwn_BL8fZ7sS_',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          setIsSuccess(true);
+          setTimeout(() => {
+            setIsSuccess(null); // Reset after 2 seconds
+          }, 3000);
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          setIsSuccess(false);
+          setTimeout(() => {
+            setIsSuccess(null); // Reset after 2 seconds
+          }, 2000);
+        },
+      );
+  }
+  };
+  
   return (
     <>
       <header className="l-header">
@@ -224,9 +254,10 @@ const App : React.FC = (props: Props) => {
                 className="portfolio__img">
                 <img
                   src="assets\kamagaming.png"
-                  alt="Gaming Portal to a real gaming pc with high end performance , with pre installed games and a lot of features."
+                  alt=""
                 />
                 <h3>KamaGaming</h3>
+                <p>Gaming Portal to a real gaming pc with high end performance , with pre installed games and a lot of features.</p>
                 <div className="portfolio__link">
                   <a href="#" className="portfolio__link-name">
                     {" "}
@@ -240,9 +271,10 @@ const App : React.FC = (props: Props) => {
                 className="portfolio__img">
                 <img
                   src="assets\tajrayancar.png"
-                  alt="Car Rental App"
+                  alt=""
                 />
                 <h3>Taj Rayan Cars</h3>
+                <p>Car Rental Website with booking features, offering a diverse fleet of cars for you to discover and rent.</p>
                 <div className="portfolio__link">
                   <a href="#" className="portfolio__link-name">
                     {" "}
@@ -258,6 +290,9 @@ const App : React.FC = (props: Props) => {
                   alt="Social App"
                 />
                 <h3>Ekspecto</h3>
+                <p>Ekspecto is a versatile social media platform, encompassing various features. In the initial phase, I developed the registration,
+                  login, and signup functionalities, including facial recognition for profile pictures using Amazon AWS Face Recognition API.
+                  Built with Laravel and Tailwind CSS, among other technologies.</p>
                 <div className="portfolio__link">
                   <a href="#" className="portfolio__link-name">
                     {" "}
@@ -274,6 +309,8 @@ const App : React.FC = (props: Props) => {
                   alt="WeatherForecastapp"
                 />
                 <h3>Weather Forecast App</h3>
+                <p>Stay ahead of the weather with our intuitive weather forecast web app. Get accurate and up-to-date weather
+                information tailored to your location, helping you plan your day with confidence.</p>
                 <div className="portfolio__link">
                   <a href="#" className="portfolio__link-name">
                     {" "}
@@ -287,6 +324,8 @@ const App : React.FC = (props: Props) => {
                 className="portfolio__img">
                 <img src="assets/projectx.JPG" alt="games web site" />
                 <h3>Games Website</h3>
+                <p>Dive into a world of fun with my web app featuring multiple games crafted with JavaScript.
+                Challenge yourself and enjoy hours of entertainment with our diverse selection of interactive games.</p>
                 <div className="portfolio__link">
                   <a href="#" className="portfolio__link-name">
                     {" "}
@@ -299,7 +338,10 @@ const App : React.FC = (props: Props) => {
                 }
                 className="portfolio__img">
                 <img src="assets/ecom.png" alt="e-commerce-app" />
-                <h3>E-Commerce App</h3>
+                <h3>E-Commerce Web App</h3>
+                <p>Discover the latest in mobile technology with our phone selling eCommerce website.
+                  Browse a wide range of top-quality smartphones, find exclusive deals, and shop with ease
+                  for your perfect device."</p>
                 <div className="portfolio__link">
                   <a href="#" className="portfolio__link-name">
                     {" "}
@@ -313,6 +355,9 @@ const App : React.FC = (props: Props) => {
                 className="portfolio__img">
                 <img src="assets/NIkeStore.png" alt="Nike Store" />
                 <h3>Nike Store</h3>
+                <p>Step up your style game with our shoe store eCommerce website.
+                  Explore a curated collection of trendy and comfortable footwear options, offering
+                  something for every occasion and taste.</p>
                 <div className="portfolio__link">
                   <a href="#" className="portfolio__link-name">
                     {" "}
@@ -329,6 +374,8 @@ const App : React.FC = (props: Props) => {
                   alt="Todo-App"
                 />
                 <h3>React ToDo Web App </h3>
+                <p>Organize your tasks effortlessly with our React-based Todo app. Enjoy drag-and-drop functionality, 
+                  easily add, delete, and modify tasks, and stay productive with a seamless user experience.</p>
                 <div className="portfolio__link">
                   <a href="#" className="portfolio__link-name">
                     {" "}
@@ -435,35 +482,46 @@ const App : React.FC = (props: Props) => {
                 </a></span>
             </div>
 
-            <form
-              action="https://formsubmit.co/2eb8e0fdb6665fc29b687cda23375574"
-              method="POST"
-              className="contact__form">
-              <div className="contact__inputs">
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="contact__input"
-                  required
-                />
-                <input
-                  type="mail"
-                  placeholder="Email"
-                  className="contact__input"
-                  required
-                />
-              </div>
+<form
+  action="https://formsubmit.co/2eb8e0fdb6665fc29b687cda23375574"
+  method="POST"
+  className="contact__form"
+  onSubmit={sendEmail}
+  ref={form}
+>
+  <div className="contact__inputs">
+    <input
+      type="text"
+      placeholder="Name"
+      className="contact__input"
+      name="user_name"
+      required
+    />
+    <input
+      type="email"
+      placeholder="Email"
+      className="contact__input"
+      name="user_email"
+      required
+    />
+  </div>
 
-              <textarea
-                name=""
-                id=""
-                cols={0}
-                rows={10}
-                className="contact__input"
-                required></textarea>
+  <textarea
+    cols={0}
+    rows={10}
+    className="contact__input"
+    name="message"
+    required
+  ></textarea>
+{isSuccess === true && (
+        <p style={{ color: 'green' }}>Email sent successfully!</p>
+      )}
+      {isSuccess === false && (
+        <p style={{ color: 'red' }}>Failed to send email. Please try again.</p>
+      )}
+  <input type="submit" value="Send" className="contact__button" />
+</form>
 
-              <input type="submit" value="Send" className="contact__button" />
-            </form>
           </div>
         </section>
       </main>
@@ -492,11 +550,6 @@ const App : React.FC = (props: Props) => {
               <li>
                 <a href="#portfolio" className="footer__link">
                   Portfolio
-                </a>
-              </li>
-              <li>
-                <a href="#workedWith" className="footer__link">
-                  Contact
                 </a>
               </li>
               <li>

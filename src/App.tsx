@@ -8,6 +8,7 @@ import { GiGraduateCap } from "react-icons/gi";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import Main from "./main";
 import emailjs from '@emailjs/browser';
+import { Helmet } from "react-helmet";
 
 type Props = {};
 
@@ -44,6 +45,16 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
   
   return (
     <>
+        <Helmet>
+        <meta charSet="utf-8" />
+        <title>Portfolio</title>
+        <meta name="description" content="I am a Full Stack Engineer" />
+        <meta property="og:title" content="Portfolio" />
+        <meta property="og:description" content="I am a Full Stack Engineer" />
+        <meta property="og:image" content="/public/assets/Portfolio.png" />
+        <meta property="og:url" content="https://yahyasaadaoui.vercel.app" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <header className="l-header">
         <nav className="nav bd-grid">
           <div>

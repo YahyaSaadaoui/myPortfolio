@@ -563,6 +563,11 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
                   Portfolio
                 </a>
               </li>
+              <li className="nav__item">
+                <a href="#workedWith" className="nav__link">
+                  Worked With
+                </a>
+              </li>
               <li>
                 <a href="#Contact" className="footer__link">
                   Contact
@@ -592,12 +597,6 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
               href="https://www.linkedin.com/in/yahya-saadaoui-76546322a/"
               className="footer__social">
               <BsLinkedin />
-            </a>
-            <a
-              href="assets/yahya-saadaoui.pdf"
-              download
-              className="footer__social">
-              <GiGraduateCap />
             </a>
           </div>
         </div>

@@ -260,7 +260,7 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
             <div className="portfolio__container bd-grid">
               <div
                 onClick={() =>
-                  (window.location.href = "https://kamagaming.ma/")
+                  (window.location.href = "https://kamagaming.ma/?cmp_bypass=4eb3976d59493bec896e8bd1e9f2e81d")
                 }
                 className="portfolio__img">
                 <img

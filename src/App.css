@@ -411,24 +411,24 @@ img {
 /* Worked With  */
 
 
-.workedWith__container {
+.Clients__container {
     justify-items: center;
     align-items: center;
     row-gap: 2rem;
     
 }
 
-.workedWith__img {
+.Clients__img {
     position: relative;
     overflow: hidden;
     color: #000212;
 }
 
-.workedWith__img img {
+.Clients__img img {
     border-radius: .5rem;
 }
 
-.workedWith__link {
+.Clients__link {
     position: absolute;
     bottom: -100%;
     width: 100%;
@@ -441,15 +441,15 @@ img {
     transition: .3s;
 }
 
-.workedWith__img:hover .workedWith__link {
+.Clients__img:hover .Clients__link {
     bottom: 0;
 }
 
-.workedWith__link-name {
+.Clients__link-name {
     color: var(--dark-color);
 }
 
-.workedWith__container {
+.Clients__container {
     grid-template-columns: repeat(4, 2fr);
     grid-template-rows: repeat(1, 1fr);
     /* column-gap: 2rem; */

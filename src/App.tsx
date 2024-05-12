@@ -86,8 +86,8 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
                 </a>
               </li>
               <li className="nav__item">
-                <a href="#workedWith" className="nav__link">
-                  Worked With
+                <a href="#Clients" className="nav__link">
+                  Clients
                 </a>
               </li>
               <li className="nav__item">
@@ -397,23 +397,23 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
           </div>
         </section>
         {/* ========Worked With==========*/}
-        <section className="workedWith section" id="workedWith">
+        <section className="Clients section" id="Clients">
         <div>
           <h2 className="section-title">Companies I have Worked With</h2>
 
-          <div className="workedWith__container bd-grid">
+          <div className="Clients__container bd-grid">
             <div
               onClick={() =>
                 (window.location.href = "https://kamagaming.ma/")
               }
-              className="workedWith__img">
+              className="Clients__img">
               <img
                 src="assets\kamagaminglogo.png"
                 alt="Gaming Portal to a real gaming pc with high end performance , with pre installed games and a lot of features."
               />
               <h3></h3>
-              <div className="workedWith__link">
-                <a href="#" className="workedWith__link-name">
+              <div className="Clients__link">
+                <a href="#" className="Clients__link-name">
                   {" "}
                 </a>
               </div>
@@ -423,14 +423,14 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
               onClick={() =>
                 (window.location.href = "https://kamagaming.ma/")
               }
-              className="workedWith__img tajrayancar">
+              className="Clients__img tajrayancar">
               <img
                 src="assets\tajrayancarlogo.png"
                 alt="Gaming Portal to a real gaming pc with high end performance , with pre installed games and a lot of features."
               />
               <h3></h3>
-              <div className="workedWith__link">
-                <a href="#" className="workedWith__link-name">
+              <div className="Clients__link">
+                <a href="#" className="Clients__link-name">
                   {" "}
                 </a>
               </div>
@@ -439,14 +439,14 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
               onClick={() =>
                 (window.location.href = "https://kamagaming.ma/")
               }
-              className="workedWith__img creativecanalmedia">
+              className="Clients__img creativecanalmedia">
               <img
                 src="assets\creativecanalmedialogo.jpeg"
                 alt="Gaming Portal to a real gaming pc with high end performance , with pre installed games and a lot of features."
               />
               <h3></h3>
-              <div className="workedWith__link">
-                <a href="#" className="workedWith__link-name">
+              <div className="Clients__link">
+                <a href="#" className="Clients__link-name">
                   {" "}
                 </a>
               </div>
@@ -455,14 +455,14 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
               onClick={() =>
                 (window.location.href = "https://kamagaming.ma/")
               }
-              className="workedWith__img">
+              className="Clients__img">
               <img
                 src="assets\pixelshadelogo.png"
                 alt="Gaming Portal to a real gaming pc with high end performance , with pre installed games and a lot of features."
               />
               <h3></h3>
-              <div className="workedWith__link">
-                <a href="#" className="workedWith__link-name">
+              <div className="Clients__link">
+                <a href="#" className="Clients__link-name">
                   {" "}
                 </a>
               </div>
@@ -563,9 +563,9 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
                   Portfolio
                 </a>
               </li>
-              <li className="nav__item">
-                <a href="#workedWith" className="nav__link">
-                  Worked With
+              <li className="#Contact">
+                <a href="#Clients" className="footer__link">
+                  Clients
                 </a>
               </li>
               <li>

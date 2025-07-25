@@ -589,7 +589,7 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
               <GrInstagram />
             </a>
             <a
-              href="https://www.linkedin.com/in/yahya-saadaoui-76546322a/"
+              href="https://www.linkedin.com/in/yahyasaadaoui/"
               className="footer__social">
               <BsLinkedin />
             </a>

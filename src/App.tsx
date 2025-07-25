@@ -487,7 +487,7 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
 
               <h3 className="contact__subtitle">My Cv</h3>
               <span className="contact__text">                <a
-                  href="assets/yahya-saadaoui.pdf"
+                  href="assets/Yahya_Saadaoui _.pdf"
                   download
                   className="contact__text">Download
                 </a></span>
@@ -582,11 +582,6 @@ const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
               href="https://github.com/YahyaSaadaoui"
               className="footer__social">
               <VscGithub />
-            </a>
-            <a
-              href="https://web.facebook.com/hafsa.elomrani.9/"
-              className="footer__social">
-              <BsFacebook />
             </a>
             <a
               href="https://www.instagram.com/dr_slow72/"

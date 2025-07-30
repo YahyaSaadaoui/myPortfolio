@@ -27,8 +27,8 @@ const ContactForm = () => {
 
         if (form.current) {
             emailjs
-                .sendForm('service_61httok', 'template_t5o5gfq', form.current, {
-                    publicKey: 'ymojjwn_BL8fZ7sS_',
+                .sendForm('service_1m9yjdb', 'template_f317r5p', form.current, {
+                    publicKey: 'PmRAiDKuV5cn4D4oI',
                 })
                 .then(
                     () => {
@@ -53,7 +53,7 @@ const ContactForm = () => {
         <motion.div variants={fadeInUp}>
             <Card className="bg-white/5 backdrop-blur-sm border-white/10">
                 <CardContent className="p-8">
-                    <form ref={form} onSubmit={sendEmail} className="space-y-6">
+                    <form ref={form} id="contact-form" onSubmit={sendEmail} className="space-y-6">
                         <div className="grid md:grid-cols-2 gap-4">
                             <Input
                                 name="user_name"
@@ -73,7 +73,8 @@ const ContactForm = () => {
                             rows={6}
                             className="bg-white/10 border-white/20 text-white placeholder:text-gray-400"
                         />
-                        <Button type="submit" className="w-full bg-white text-black hover:bg-gray-200 transition-colors duration-300">
+                        <Button type="submit"
+                                className="w-full bg-white text-black hover:bg-gray-200 transition-colors duration-300">
                             Send Message
                         </Button>
                         {isSuccess === true && <p className="text-green-500">Email sent successfully!</p>}

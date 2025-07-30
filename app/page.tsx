@@ -543,7 +543,6 @@ const skills = {
                     </div>
                   </div>
                 </motion.div>
-                {/* Replace the existing form with the ContactForm component */}
                 <ContactForm/>
               </div>
             </AnimatedSection>

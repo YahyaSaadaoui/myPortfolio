@@ -193,7 +193,7 @@ const skills = {
       title: "Nike Store",
       description:
         "Step up your style game with our shoe store eCommerce website. Explore a curated collection of trendy and comfortable footwear options, offering something for every occasion and taste.",
-      image: "./images/NikeStore.png",
+      image: "./images/NIkeStore.png",
       tags: ["React", "Next.js", "Tailwind CSS", "Stripe"],
       link: "#",
     },

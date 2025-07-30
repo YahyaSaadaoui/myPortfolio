@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     creator: 'Yahya Saadaoui',
     publisher: 'Yahya Saadaoui',
     applicationName: 'Yahya Saadaoui Portfolio',
-    metadataBase: new URL('https://yahyasaadaoui.vercel.app/p'),
+    metadataBase: new URL('https://yahyasaadaoui.vercel.app/'),
 };
 
 

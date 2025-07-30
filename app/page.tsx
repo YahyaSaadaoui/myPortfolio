@@ -534,10 +534,12 @@ const skills = {
                       </div>
                     </div>
                     <div className="pt-6">
-                      <Button className="bg-white text-black hover:bg-gray-200 transition-colors duration-300">
-                        <Download className="w-4 h-4 mr-2"/>
-                        Download CV
-                      </Button>
+                      <a href="/Yahya_Saadaoui.pdf" download>
+                        <Button className="bg-white text-black hover:bg-gray-200 transition-colors duration-300">
+                          <Download className="w-4 h-4 mr-2"/>
+                          Download CV
+                        </Button>
+                      </a>
                     </div>
                   </div>
                 </motion.div>

@@ -4,10 +4,17 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-    title: 'v0 App',
-    description: 'Created with v0',
-    generator: 'v0.dev',
-}
+    title: 'Yahya Saadaoui – Software Engineer & Full-Stack Developer',
+    description: 'Personal portfolio of Yahya Saadaoui, a full-stack software engineer specializing in Java, Spring Boot, React, Angular and microservices. Explore projects, experience, and CV.',
+    generator: 'Next.js + Vercel',
+    keywords: ['Yahya Saadaoui', 'Software Engineer', 'Full-Stack Developer', 'Java', 'Spring Boot', 'React', 'Angular' , 'Portfolio', 'Microservices'],
+    authors: [{ name: 'Yahya Saadaoui', url: 'https://yahyasaadaoui.vercel.app/' }],
+    creator: 'Yahya Saadaoui',
+    publisher: 'Yahya Saadaoui',
+    applicationName: 'Yahya Saadaoui Portfolio',
+    metadataBase: new URL('https://yahyasaadaoui.vercel.app/p'),
+};
+
 
 export default function RootLayout({
                                        children,

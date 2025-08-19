@@ -268,9 +268,8 @@ const skills = {
             >
               <h1 className="text-8xl md:text-6xl lg:text-[12rem] font-bold tracking-tighter mb-8">
               <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-                HELLO
+                HELLO.
               </span>
-                <span className="text-white">.</span>
               </h1>
               <motion.p
                   initial={{opacity: 0, y: 20}}

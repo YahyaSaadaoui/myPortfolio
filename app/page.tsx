@@ -21,6 +21,9 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import ContactForm from './emailingService';
+import CompaniesMarquee from "@/components/CompaniesMarquee";
+
+type Company = { name: string; logo: string };
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
@@ -216,13 +219,14 @@ const skills = {
 
   ]
 
-  const companies = [
-    { name: "HPS", logo: "./images/hps.png" },
-    { name: "KamaGaming", logo: "./images/kamagaminglogo.png" },
-    { name: "Creative Canal Media", logo: "./images/creativecanalmedialogo.jpeg" },
-    { name: "Taj Rayan Car", logo: "./images/tajrayancarlogo.png" },
-    { name: "Pixel Shades", logo: "./images/pixelshadelogo.png" },
-  ]
+const companies = [
+  { name: "HPS", logo: "/images/hps.png" },
+  { name: "KamaGaming", logo: "/images/kamagaminglogo.png" },
+  { name: "Creative Canal Media", logo: "/images/creativecanalmedialogo.jpeg" },
+  { name: "Taj Rayan Car", logo: "/images/tajrayancarlogo.png" },
+  { name: "Pixel Shades", logo: "/images/pixelshadelogo.png" },
+];
+
 
   return (
       <div className="min-h-screen bg-black text-white overflow-x-hidden">
@@ -458,38 +462,7 @@ const skills = {
         </section>
 
         {/* Companies Section */}
-        <section className="py-32 px-6 bg-gradient-to-b from-black to-gray-900">
-          <div className="max-w-7xl mx-auto">
-            <AnimatedSection>
-              <motion.div variants={fadeInUp} className="text-center mb-20">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                  Companies I have Worked With
-                </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-white to-gray-400 mx-auto"/>
-              </motion.div>
-
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                {companies.map((company, index) => (
-                    <motion.div
-                        key={company.name}
-                        variants={fadeInUp}
-                        transition={{delay: index * 0.1}}
-                        whileHover={{scale: 1.05}}
-                        className="flex items-center justify-center p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg hover:bg-white/10 transition-all duration-300"
-                    >
-                      <Image
-                          src={company.logo || "/placeholder.svg"}
-                          alt={company.name}
-                          width={120}
-                          height={60}
-                          className="max-w-full h-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
-                      />
-                    </motion.div>
-                ))}
-              </div>
-            </AnimatedSection>
-          </div>
-        </section>
+        <CompaniesMarquee companies={companies} duration={28} />
 
         {/* Contact Section */}
         <section id="contact" className="py-32 px-6">

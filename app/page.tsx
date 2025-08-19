@@ -18,6 +18,7 @@ import {
   MapPin,
   Download,
   ExternalLink,
+  Twitter
 } from "lucide-react"
 import Image from "next/image"
 import ContactForm from './emailingService';
@@ -331,6 +332,20 @@ const companies = [
                         <Linkedin className="w-5 h-5"/>
                       </Button>
                     </a>
+                    <a
+                    href="https://x.com/Dslow72"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="X (formerly Twitter)">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="border-white/20 hover:bg-white hover:text-black bg-transparent"
+                      title="Follow me on X"
+                    >
+                      <Twitter className="w-5 h-5" />
+                    </Button>
+                  </a>
                   </div>
                 </motion.div>
 
@@ -558,6 +573,20 @@ const companies = [
                         className="border-white/20 hover:bg-white hover:text-black bg-transparent"
                     >
                       <Linkedin className="w-5 h-5"/>
+                    </Button>
+                  </a>
+                  <a
+                    href="https://x.com/Dslow72"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="X (formerly Twitter)">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="border-white/20 hover:bg-white hover:text-black bg-transparent"
+                      title="Follow me on X"
+                    >
+                      <Twitter className="w-5 h-5" />
                     </Button>
                   </a>
                 </div>

@@ -103,8 +103,9 @@ export default function CompaniesMarquee({
                     alt={c.name}
                     width={160}
                     height={80}
-                    className="h-10 md:h-12 w-auto grayscale opacity-60 contrast-125 brightness-110 transition-all duration-300"
-                  />
+                    className="h-10 md:h-12 w-auto grayscale opacity-70 contrast-125 brightness-110
+                                [mix-blend-mode:multiply]"  // hides white-ish boxes on dark bg
+                    />
                 </div>
               ))}
             </div>

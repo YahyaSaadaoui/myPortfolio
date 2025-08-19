@@ -18,11 +18,11 @@ import {
   MapPin,
   Download,
   ExternalLink,
-  Twitter
 } from "lucide-react"
 import Image from "next/image"
 import ContactForm from './emailingService';
 import CompaniesMarquee from "@/components/CompaniesMarquee";
+import XGlyph from "@/components/ui/XGlyph";
 
 type Company = { name: string; logo: string };
 

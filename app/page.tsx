@@ -221,7 +221,7 @@ const skills = {
   ]
 
 const companies = [
-  { name: "HPS", logo: "/images/hps.png" },
+  { name: "HPS", logo: "/images/hps best logo.jpeg" },
   { name: "KamaGaming", logo: "/images/kamagaminglogo.png" },
   { name: "Creative Canal Media", logo: "/images/creativecanalmedialogo.jpeg" },
   { name: "Taj Rayan Car", logo: "/images/tajrayancarlogo.png" },

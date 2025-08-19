@@ -8,22 +8,17 @@ type Company = { name: string; logo: string };
 
 export default function CompaniesMarquee({
   companies,
-  duration = 28, // seconds to slide one full set
+  duration = 28,
 }: {
   companies: Company[];
   duration?: number;
 }) {
   const prefersReducedMotion = useReducedMotion();
   const controls = useAnimation();
-
-  // Measure the width of ONE set so we can:
-  // 1) limit the viewport to that width (no duplicate visible)
-  // 2) animate exactly that distance
   const firstSetRef = useRef<HTMLDivElement>(null);
   const [firstSetWidth, setFirstSetWidth] = useState(0);
 
-  const measure = () =>
-    setFirstSetWidth(firstSetRef.current?.scrollWidth ?? 0);
+  const measure = () => setFirstSetWidth(firstSetRef.current?.scrollWidth ?? 0);
 
   useLayoutEffect(() => {
     measure();
@@ -44,7 +39,6 @@ export default function CompaniesMarquee({
 
   useEffect(() => {
     startLoop();
-    // re-run when width/duration/reduced-motion changes
   }, [firstSetWidth, duration, prefersReducedMotion]);
 
   return (
@@ -57,23 +51,17 @@ export default function CompaniesMarquee({
           <div className="w-20 h-1 bg-gradient-to-r from-white/90 to-gray-400/60 mx-auto" />
         </div>
 
-        {/* Viewport is clamped to the width of one set */}
         <div
           className="relative overflow-hidden mx-auto"
           style={{ maxWidth: firstSetWidth ? `${firstSetWidth}px` : undefined }}
           onMouseEnter={() => controls.stop()}
           onMouseLeave={startLoop}
         >
-          {/* edge fades */}
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-12 md:w-20 bg-gradient-to-r from-black to-transparent z-10" />
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-12 md:w-20 bg-gradient-to-l from-black to-transparent z-10" />
-
           <motion.div
             className="flex gap-16 will-change-transform"
             initial={{ x: 0 }}
             animate={prefersReducedMotion ? { x: 0 } : controls}
           >
-            {/* FIRST SET (measured) */}
             <div ref={firstSetRef} className="flex gap-16 pr-16">
               {companies.map((c) => (
                 <div
@@ -90,8 +78,6 @@ export default function CompaniesMarquee({
                 </div>
               ))}
             </div>
-
-            {/* SECOND SET (for seamless loop, hidden initially by maxWidth) */}
             <div aria-hidden className="flex gap-16 pr-16">
               {companies.map((c) => (
                 <div

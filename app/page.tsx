@@ -343,7 +343,7 @@ const companies = [
                       className="border-white/20 hover:bg-white hover:text-black bg-transparent"
                       title="Follow me on X"
                     >
-                      <Twitter className="w-5 h-5" />
+                      <XGlyph className="w-5 h-5" />
                     </Button>
                   </a>
                   </div>
@@ -586,7 +586,7 @@ const companies = [
                       className="border-white/20 hover:bg-white hover:text-black bg-transparent"
                       title="Follow me on X"
                     >
-                      <Twitter className="w-5 h-5" />
+                      <XGlyph className="w-5 h-5" />
                     </Button>
                   </a>
                 </div>

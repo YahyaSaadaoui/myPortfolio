@@ -4,10 +4,10 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-    title: 'Yahya Saadaoui – Software Engineer & Full-Stack Developer',
-    description: 'Personal portfolio of Yahya Saadaoui, a full-stack software engineer specializing in Java, Spring Boot, React, Angular and microservices. Explore projects, experience, and CV.',
+    title: 'Yahya Saadaoui | Payment Systems & Backend Engineering',
+    description: 'Implementation Engineer at HPS working on PowerCARD switching, ISO 8583, Oracle CDC, Kafka, and payment security. Explore backend, full-stack, and AI projects.',
     generator: 'Next.js + Vercel',
-    keywords: ['Yahya Saadaoui', 'Software Engineer', 'Full-Stack Developer', 'Java', 'Spring Boot', 'React', 'Angular' , 'Portfolio', 'Microservices'],
+    keywords: ['Yahya Saadaoui', 'HPS', 'PowerCARD', 'ISO 8583', 'Oracle CDC', 'Kafka', 'Payment Systems'],
     authors: [{ name: 'Yahya Saadaoui', url: 'https://yahyasaadaoui.vercel.app/' }],
     creator: 'Yahya Saadaoui',
     publisher: 'Yahya Saadaoui',

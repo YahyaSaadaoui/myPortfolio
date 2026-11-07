@@ -68,8 +68,8 @@ export default function CompaniesMarquee({
   };
 
   return (
-    <section className="py-32 px-6 bg-gradient-to-b from-black to-gray-900">
-      <div className="max-w-7xl mx-auto">
+    <section className="grid min-h-[100svh] min-w-0 items-center border-t border-white/10 px-6 py-20 md:py-28 bg-gradient-to-b from-black to-gray-900">
+      <div className="mx-auto w-full min-w-0 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
             Companies I have Worked With
@@ -142,3 +142,4 @@ export default function CompaniesMarquee({
     </section>
   );
 }
+

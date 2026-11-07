@@ -4,7 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-    title: 'Yahya Saadaoui | Payment Systems & Backend Engineering',
+    title: 'Yahya Saadaoui',
     description: 'Implementation Engineer at HPS working on PowerCARD switching, ISO 8583, Oracle CDC, Kafka, and payment security. Explore backend, full-stack, and AI projects.',
     generator: 'Next.js + Vercel',
     keywords: ['Yahya Saadaoui', 'HPS', 'PowerCARD', 'ISO 8583', 'Oracle CDC', 'Kafka', 'Payment Systems'],
@@ -22,17 +22,8 @@ export default function RootLayout({
     children: React.ReactNode
 }>) {
     return (
-        <html lang="en">
-        <head>
-            <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
-        `}</style>
-        </head>
-        <body>{children}</body>
+        <html lang="en" className={`${GeistSans.className} ${GeistSans.variable} ${GeistMono.variable}`}>
+            <body>{children}</body>
         </html>
     )
 }

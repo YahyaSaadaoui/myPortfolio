@@ -19,7 +19,6 @@ import Link from "next/link"
 import { skills, timeline } from "./portfolio-data"
 import ContactForm from './emailingService';
 import CompaniesMarquee from "@/components/CompaniesMarquee";
-import XGlyph from "@/components/ui/XGlyph";
 
 export default function Portfolio() {
   const reduceMotion = useReducedMotion()
@@ -149,20 +148,6 @@ export default function Portfolio() {
                         <Linkedin className="w-5 h-5"/>
                       </Button>
                     </a>
-                    <a
-                    href="https://x.com/Dslow72"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="X (formerly Twitter)">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="border-white/20 hover:bg-white hover:text-black bg-transparent"
-                      title="Follow me on X"
-                    >
-                      <XGlyph className="w-5 h-5" />
-                    </Button>
-                  </a>
                   </div>
                 </motion.div>
 
@@ -385,20 +370,6 @@ export default function Portfolio() {
                         className="border-white/20 hover:bg-white hover:text-black bg-transparent"
                     >
                       <Linkedin className="w-5 h-5"/>
-                    </Button>
-                  </a>
-                  <a
-                    href="https://x.com/Dslow72"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="X (formerly Twitter)">
-                    <Button
-                      variant="outline"
-                      size="icon"
-                      className="border-white/20 hover:bg-white hover:text-black bg-transparent"
-                      title="Follow me on X"
-                    >
-                      <XGlyph className="w-5 h-5" />
                     </Button>
                   </a>
                 </div>
